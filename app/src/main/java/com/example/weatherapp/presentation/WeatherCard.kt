@@ -65,6 +65,12 @@ fun WeatherCard(
                     fontSize = 50.sp,
                     color = Color.White
                 )
+                Spacer(modifier = Modifier.height(8.dp))
+                Text(
+                    text = "Feels-Like: ${data.apparentTemperatures}°C",
+                    fontSize = 20.sp,
+                    color = Color.White
+                )
                 Spacer(modifier = Modifier.height(16.dp))
                 Text(
                     text = data.weatherType.weatherDesc,
